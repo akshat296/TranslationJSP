@@ -1,0 +1,42 @@
+<HTML>
+<HEAD><TITLE>Internat form</TITLE></HEAD>
+<BODY>
+<CENTER>
+<P>
+[English]
+<A HREF="InternatHndl.jsp?language=1">[Deutsch]</A>
+<A HREF="InternatHndl.jsp?language=2">[Français]</A>
+<A HREF="InternatHndl.jsp?language=3">[Italiano]</A>
+<A HREF="InternatHndl.jsp?language=4">[Español]</A>
+<P>
+<FORM METHOD="POST" ENCTYPE="multipart/form-data">
+    <INPUT TYPE="HIDDEN" NAME="language">
+<TABLE>
+<TR><TD ALIGN="LEFT">
+    <P> Language: <!-- VARIABLE NAME="language_name" -->
+</TD></TR>
+<TR><TD ALIGN="LEFT">
+    <BR>
+</TD></TR>
+<TR><TD ALIGN="LEFT">
+    <P> Date (example: <!-- VARIABLE NAME="date_example" -->)<BR>
+    <INPUT TYPE="TEXT" NAME="date" SIZE="40">
+</TD></TR>
+<TR><TD ALIGN="LEFT">
+    <!-- VARIABLE NAME="[ERROR_MESSAGE.date]" --><BR>
+</TD></TR>
+<TR><TD ALIGN="LEFT">
+    <P> Number (example: <!-- VARIABLE NAME="number_example" -->)<BR>
+    <INPUT TYPE="TEXT" NAME="number" SIZE="40">
+</TD></TR>
+<TR><TD ALIGN="LEFT">
+    <!-- VARIABLE NAME="[ERROR_MESSAGE.number]" --><BR>
+</TD></TR>
+<TR><TD ALIGN="CENTER">
+    <INPUT TYPE="IMAGE" SRC="send.gif">
+</TD></TR>
+</TABLE>
+</FORM>
+</CENTER>
+</BODY>
+</HTML>
